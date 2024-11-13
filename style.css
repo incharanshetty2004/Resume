@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #91386c;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.intro, .resume, .biodata {
+    padding: 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 800px;
+}
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    max-width: 200px;
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 15%;
+}
+
+.text-container {
+    max-width: 500px;
+    text-align: left;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #91386c;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
