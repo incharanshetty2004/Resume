@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+header {
+    background-color: #91386c;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro, .resume, .biodata {
+    padding: 20px;
+    background-color: #fff;
+    margin: 0; /* Remove margins for full width */
+    height: calc(100vh - 50px); /* Fill the remaining height excluding header/footer */
+    overflow-y: auto; /* Allow scrolling for content overflow */
+    display: block; /* Default block layout */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.intro {
+    text-align: left; /* Align text to the left */
+    padding-top: 20px; /* Add space from the top */
+}
+
+.intro-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Keep content aligned to the left */
+    width: 100%;
+}
+
+.profile-photo {
+    max-width: 200px;
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 15%;
+}
+
+.text-container {
+    max-width: 500px;
+    text-align: left;
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.project-item {
+    margin-bottom: 10px; /* Add spacing between projects */
+}
+
+.project-title {
+    color: #91386c;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.project-title:hover {
+    color: #722d56; /* Darker shade on hover */
+}
+
+.project-description {
+    display: none; /* Hide description by default */
+    margin-top: 5px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.project-description.active {
+    display: block; /* Show description when active */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #91386c;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
